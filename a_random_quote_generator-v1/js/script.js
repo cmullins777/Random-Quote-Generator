@@ -20,7 +20,7 @@ var quotes = [
   {
      quote: 'The alternative to good design is always bad design. There is no such thing as no design.',
      source: 'Adam Judge',
-     citation: 'The Little Black Book of Design',
+     citation: '"The Little Black Book of Design"',
      year: '2011'
   },
   {
@@ -50,7 +50,7 @@ var quotes = [
   {
      quote: 'Make it simple, but significant.',
      source: 'Don Draper',
-     citation: 'Mad Men, Season 4, Episode 4',
+     citation: '"Mad Men, Season 4, Episode 4"',
      year: '2010'
   },
   {
@@ -76,7 +76,7 @@ var quotes = [
   {
      quote: 'Futures cannot be predicted but futures can be invented.',
      source: 'Dennis Gabor',
-     citation: 'Inventing the Future',
+     citation: '"Inventing the Future"',
      year: 1963
   },
   {
@@ -124,8 +124,10 @@ var quotes = [
      source: 'Martin LeBlanc'
   },
   {
-     quote: 'I don’t think the Empire had Wookiees in mind when they designed it, Chewie.',
-     source: 'Han Solo'
+     quote: 'I don’t think the Empire had Wookiees in mind when they designed her, Chewie.',
+     source: 'Han Solo',
+     citation: '"Star Wars: Episode VI - Return of the Jedi"',
+     year: '1983'
   },
   {
      quote: 'Curiosity about life in all its aspects, I think, is still the secret of great creative people.',
@@ -156,8 +158,8 @@ function printQuote() {
     htmlString += '<p class="quote">' + ranQuot.quote + '</p>';
     htmlString += '<p class="source">' + ranQuot.source;
       if (ranQuot.citation || ranQuot.year){
-        htmlString += '<span>' + ranQuot.citation + ', ' + '</span>';
-        htmlString += '<span>' + ranQuot.year + '</span>';
+        htmlString += '<span class="citation">' + ranQuot.citation + '</span>';
+        htmlString += '<span class = "year">' + ranQuot.year + '</span>';
         '</p>';
       }
   document.getElementById('quote-box').innerHTML = htmlString;
