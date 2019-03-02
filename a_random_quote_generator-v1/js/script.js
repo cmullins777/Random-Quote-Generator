@@ -159,7 +159,7 @@ function printQuote() {
     htmlString += '<p class="source">' + ranQuot.source;
       if (ranQuot.citation || ranQuot.year){
         htmlString += '<span class="citation">' + ranQuot.citation + '</span>';
-        htmlString += '<span class = "year">' + ranQuot.year + '</span>';
+        htmlString += '<span class="year">' + ranQuot.year + '</span>';
         '</p>';
       }
   document.getElementById('quote-box').innerHTML = htmlString;
